@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Text to voice converter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <h1>Text To Speech <span>converter</span></h1>
+            <textarea placeholder="write anything here..."></textarea>
+
+            <div class="row">
+                <button>Listen</button>
+            </div>
+        </div>`
+
+        <!-- JavaScript -->
+         <script>
+            let speech = new SpeechSynthesisUtterance();
+
+            document.querySelector("button").addEventListener("click", () =>{
+                speech.text = document.querySelector("textarea").value;
+                window.speechSynthesis.speak(speech);
+            });
+         </script>
+    </body>
+</html>
