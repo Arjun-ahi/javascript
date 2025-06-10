@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: linear-gradient(45deg, rgb(5, 132, 171), #e3f9ff);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background: #3a4452;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.calculator form input[type="button"]{
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    font-size: 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+form.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.display input{
+    width: 272px;
+    text-align: right;
+    font-size: 55px;
+    margin-bottom: 5px;
+    background: transparent;
+     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+#first input{
+    color: #33ffd8;
+}
+#second .into{
+    color: #33ffd8;
+}
+#three .minus{
+    color: #33ffd8;
+}
+#four .plus{
+    color: #33ffd8;
+}
+#five .equal{
+    color: #33ffd8;
+    width: 130px;
+}
